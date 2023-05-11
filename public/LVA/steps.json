@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Agregar Parámetro",
+        "description": "Esta opción te permite agregar un nuevo parámetro a la tabla. Se recomienda que asignes un nombre claro y descriptivo al nuevo parámetro para facilitar su comprensión y uso. Por defecto, se agrega un valor \"lambda\" como representante del parámetro recién creado",
+        "image": {
+            "url": "/LVA/image1.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Eliminar Parámetro",
+        "description": "Esta opción te permite eliminar un parámetro específico de la tabla, junto con su valor lambda o las clases de equivalencia asociadas a dicho parámetro",
+        "image": {
+            "url": "/LVA/image2.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Eliminar lambda",
+        "description": "Esta opción te permite eliminar el valor \"lambda\" por defecto asociado a cada parámetro en la tabla. Al eliminar el lambda, se habilitan dos botones: \"Agregar lambda\" y \"Agregar clases de equivalencia\". Estas opciones te permiten establecer un nuevo valor lambda o crear clases de equivalencia específicas en lugar del valor lambda predeterminado.",
+        "image": {
+            "url": "/LVA/image3.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Incremento de x.",
+        "description": "Esta opción te permite establecer el incremento o paso de x en la generación de valores de prueba. Al definir un paso específico, como 10, se generarán valores de prueba que sigan ese incremento dentro de un rango predefinido, como x ≥ 10 y x ≤ 100. Esto te brinda el control para seleccionar valores clave o puntos de interés dentro del rango y ajustar la cobertura de prueba según tus necesidades. El incremento de x es opcional y te permite obtener una cobertura óptima de los valores de prueba al ajustar el paso según los requisitos de prueba y la resolución necesaria.",
+        "image": {
+            "url": "/LVA/image4.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Agregar Lambda",
+        "description": "Esta opción te permite agregar un valor lambda a un parámetro específico en la tabla. Puedes definir una función lambda válida sintácticamente que esté dentro de un rango y que incluya restricciones adicionales. Esto te permite establecer condiciones más complejas para la generación de valores de prueba. Por ejemplo, podrías agregar un lambda complejo como x >= 1 and x <= 250 and x % 2 == 0 and x not in [20, 50]. Este lambda establece múltiples condiciones, como que x debe ser mayor o igual a 1, menor o igual a 250, un número par y no puede ser igual a 20 o 50.",
+        "image": {
+            "url": "/LVA/image5.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Agregar clase",
+        "description": "Esta opción te permite agregar una nueva clase de equivalencia a un parámetro específico en la tabla. Siguiendo el concepto de partición de equivalencias, cada clase agrupa un conjunto de valores de entrada que se espera que produzcan resultados de salida similares.",
+        "image": {
+            "url": "/LVA/image6.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Ejemplo",
+        "description": "En este ejemplo, consideramos tres parámetros de tipo lambda: salario, horas trabajadas y experiencia. Cada parámetro está acotado en un rango específico y con un paso especifico. Cada parámetro genera 2 valores inválidos y 5 valores válidos mediante la función lambda correspondiente, finalemnte se usa la técnica de partición de equivalencias para generar los casos de prueba.",
+        "image": {
+            "url": "/LVA/example.png",
+            "width": 700,
+            "height": 690
+        }
+    }
+]

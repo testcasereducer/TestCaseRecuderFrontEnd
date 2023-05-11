@@ -1,0 +1,16 @@
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #198754;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0f7244
+}
+
+.symbol-lambda {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}

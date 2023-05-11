@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Agregar fila",
+        "description": "Esta opción te permite agregar una fila de valores para cada uno de los parámetros actuales en la tabla.  Al seleccionar esta opción, puedes ingresar un conjunto de valores que representen una combinación específica de niveles para los factores de prueba.",
+        "image": {
+            "url": "/OA/image1.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Eliminar fila",
+        "description": "Esta opción te permite eliminar una fila específica de la tabla, lo cual implica la eliminación de los valores asociados a cada uno de los parámetros en esa fila.",
+        "image": {
+            "url": "/OA/image2.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Agregar Parámetro",
+        "description": "Esta opción te permite agregar un nuevo parámetro a la tabla. Al seleccionar esta opción, se crean automáticamente filas específicas para ese nuevo parámetro, basadas en el número de filas existentes en la tabla en ese momento.",
+        "image": {
+            "url": "/OA/image3.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+    {
+        "title": "Eliminar Parámetro",
+        "description": "Esta opción te permite eliminar un parámetro específico de la tabla. Al seleccionar esta opción, se eliminará el parámetro junto con todas las columnas asociadas a él.",
+        "image": {
+            "url": "/OA/image4.png",
+            "width": 1400,
+            "height": 500
+        }
+    },
+
+    {
+        "title": "Ejemplo",
+        "description": "En este ejemplo, tenemos 4 parámetros: \"tipo de cliente\" con 3 opciones, \"plazo de pago\" con 3 opciones, \"cantidad solicitada\" con 2 opciones y \"envío de pago\" con 3 opciones. Si calculamos el número de combinaciones sin utilizar arreglos ortogonales de Taguchi, obtendríamos un total de 3x3x2x3 = 54 combinaciones posibles. Sin embargo, al aplicar la técnica de arreglos ortogonales de Taguchi, podemos reducir significativamente el número de casos de prueba necesarios. Usando un arreglo ortogonal adecuado para 4 factores y niveles correspondientes, obtendremos un total de 9 casos de prueba, que representan de manera efectiva todas las posibles combinaciones.",
+        "image": {
+            "url": "/OA/example.png",
+            "width": 700,
+            "height": 690
+        }
+    }
+]

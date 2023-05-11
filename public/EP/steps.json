@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Agregar Parámetro",
+        "description": "Esta opción permite agregar parámetros a la tabla de clases de equivalencia. Cada parámetro añadido representa una característica relevante y por defecto crea una nueva clase de equivalencia. Es importante asignar a cada parámetro un nombre claro y descriptivo que represente adecuadamente la característica que se está evaluando. ",
+        "image": {
+            "url" : "/EP/image1.png",
+            "width" : 1400,
+            "height" : 500
+        }
+    },
+    {
+        "title": "Eliminar Parámetro",
+        "description": "Esta opción permite eliminar un parámetro específico de la tabla de clases de equivalencia. Al eliminar un parámetro, todas sus clases de equivalencia asociadas también son eliminadas.",
+        "image": {
+            "url" : "/EP/image2.png",
+            "width" : 1400,
+            "height" : 500
+        }
+    },
+    {
+        "title": "Agregar clase",
+        "description": "Esta opción está disponible para cada parámetro de la tabla y permite agregar nuevas clases de equivalencia al parámetro en cuestión. Cada clase de equivalencia se define por un nombre descriptivo y un representante que ejemplifica las características comunes de dicha clase. Por ejemplo, supongamos que tenemos un parámetro llamado \"monto\". Utilizando la opción de agregar clase de equivalencia, podríamos crear una clase llamada \"Entero mayor o igual a 1000\" y establecer 1000 como su representante.",
+        "image": {
+            "url" : "/EP/image3.png",
+            "width" : 1400,
+            "height" : 500
+        }
+    },
+    {
+        "title": "Eliminar clase",
+        "description": "Esta opción permite eliminar una clase de equivalencia específica asociada a un parámetro en la tabla. Si la clase de equivalencia que se elimina es la única asociada a un parámetro, el parámetro completo también se elimina. Antes de utilizar esta opción, es importante considerar las implicaciones y asegurarse de que la eliminación de la clase de equivalencia no afecte negativamente la cobertura y representatividad de las entradas de prueba.",
+        "image": {
+            "url" : "/EP/image4.png",
+            "width" : 1400,
+            "height" : 500
+        }
+    },
+    {
+        "title": "Establecer clase",
+        "description": "Esta opción permite marcar una clase de equivalencia como válida o inválida dentro de un parámetro en la tabla. Proporciona flexibilidad al definir restricciones y condiciones específicas que afectan la validez de cada clase de equivalencia en la prueba de caja negra. Por ejemplo, en el parámetro \"monto\", se puede establecer una clase de equivalencia llamada \"Valor negativo\" con un representante de -1000 y marcarla como inválida. Esto permite precisión al evaluar las entradas de prueba y sus resultados asociados.",
+        "image": {
+            "url" : "/EP/image5.png",
+            "width" : 1400,
+            "height" : 500
+        }
+    },
+    {
+        "title": "Ejemplo",
+        "description": "El ejemplo a continuación presenta un escenario con 3 parámetros: \"estados\" con 4 clases de equivalencia (2 válidas y 2 inválidas), \"tipo de cuenta\" con 4 clases (2 válidas y 2 inválidas) y \"monto\" con 6 clases (2 válidas y 4 inválidas). Si se realizara una prueba exhaustiva sin utilizar la partición de equivalencias, se requerirían 4x4x6 = 96 pruebas. Sin embargo, al aplicar la técnica de partición de equivalencias, se obtienen únicamente 16 casos de prueba, divididos en 8 casos válidos y 8 casos inválidos, lo cual representa una reducción significativa en la cantidad de pruebas necesarias.o",
+        "image": {
+            "url" : "/EP/example.png",
+            "width" : 700,
+            "height" : 690         
+        }
+    }
+]

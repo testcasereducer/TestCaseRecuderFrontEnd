@@ -1,0 +1,27 @@
+[
+    {
+        "id"  : 0,
+        "title" : "Partición de Equivalencias",
+        "description" : "Divide los datos de entrada en grupos equivalentes para reducir el número de casos de prueba necesarios.",
+        "link" : "/equivalencias",
+        "iconName" : "bi-boxes",
+        "abbreviation" : "EP"
+    },
+    {
+        "id"  : 1,
+        "title" : "Valores al Limite",
+        "description" : "Prueba los valores más pequeños y más grandes que una función puede aceptar para detectar errores.",
+        "link" : "/limites",
+        "iconName" : "bi-body-text",
+        "abbreviation" : "LVA"
+    },
+    {
+        "id" : 2,
+        "title" : "Arreglos Ortogonales",
+        "description" : "muestra todas las combinaciones posibles de entrada de una función de manera eficientes.",
+        "link" : "/ortogonales",
+        "iconName" : "bi-arrows-expand",
+        "abbreviation" : "OA"
+    }
+
+]

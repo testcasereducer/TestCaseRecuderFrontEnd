@@ -1,0 +1,14 @@
+[
+    { 
+        "title" : "Welcome!",
+        "description": "Bienvenidos a nuestra aplicación web que ofrece técnicas de reducción de casos de prueba del software. En la actualidad, probar el software es una tarea vital y ardua dentro del desarrollo del mismo, pero reducir el número de casos de prueba puede ser un proceso lento y costoso. Nuestra aplicación web facilita el uso de técnicas de reducción de casos de prueba del software de manera intuitiva y eficiente, permitiendo a los probadores reducir el tiempo y costos del proceso de pruebas."
+    },
+
+    {    
+        "title" : "Técnicas de reducción de casos de prueba del software",
+        "description": "Nuestra aplicación web cuenta con técnicas de partición de equivalencias, análisis de valores al límite y arreglos ortogonales para reducir el número de casos de prueba. Además, nuestra interfaz intuitiva permite al usuario ingresar los datos relacionados con el caso de prueba y seleccionar las técnicas de reducción de manera sencilla y eficiente."
+    },
+
+    {   "title" : "Interfaz intuitiva y eficiente",
+        "description": "Nuestro equipo de desarrollo se enfoca en ofrecer una aplicación web eficiente y fácil de usar para nuestros usuarios. Nos enorgullece poder ofrecer una herramienta que simplifica el proceso de reducción de casos de prueba y ayuda a mejorar la calidad del software."}
+]

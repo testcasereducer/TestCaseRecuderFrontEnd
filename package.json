@@ -1,0 +1,22 @@
+{
+  "name": "test-case-reducer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "dotenv": "^16.0.3",
+    "file-saver": "^2.0.5",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "reactstrap": "^9.1.8",
+    "xlsx": "^0.18.5"
+  }
+}
