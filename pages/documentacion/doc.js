@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-export default function Doc({ steps }) {
+export default function Doc({ steps = [] }) {
     return (
         <div className="container">
-            {steps.map((step, index) => {
+            {steps !== null  ? (steps.map((step, index) => {
                 const col1 = (
                     <div className="col col-md-5 col-sm-12 col-12" key={`col-5-${index}`}>
                         <h3 className="display-6">{step.title}</h3>
@@ -31,7 +31,7 @@ export default function Doc({ steps }) {
                         <hr className="hr hr-blurry mt-4" />
                     </div>
                 );
-            })}
+            })) : (<h1>No hay documentaion disponible.</h1>)}
         </div>
     );
 }

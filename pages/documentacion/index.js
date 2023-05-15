@@ -27,19 +27,24 @@ export default function index() {
             <MainSectionTech title={title} description={description} />
             <hr className="hr hr-blurry" />
             <ul className="nav nav-pills nav-justified">
-                {techniques.map(({ id, title, description, link, iconName, abbreviation }) => (
-                    <li className="nav-item" key={id}>
-                        <button
-                            className={`nav-link ${techniqueSelected === abbreviation ? "active" : ""}`}
-                            aria-current="page"
-                            href="#"
-                            key={id}
-                            onClick={() => setTechniqueSelected(abbreviation)}>
-                            {title} <i className={`ms-2 bi ${iconName}`}></i>
-                        </button>
-                    </li>
-                ))}
+                {techniques !== null ? (
+                    techniques.map(({ id, title, description, link, iconName, abbreviation }) => (
+                        <li className="nav-item" key={id}>
+                            <button
+                                className={`nav-link ${techniqueSelected === abbreviation ? "active" : ""}`}
+                                aria-current="page"
+                                href="#"
+                                key={id}
+                                onClick={() => setTechniqueSelected(abbreviation)}>
+                                {title} <i className={`ms-2 bi ${iconName}`}></i>
+                            </button>
+                        </li>
+                    ))
+                ) : (
+                    <h1>No hay técnicas disponibles.</h1>
+                )}
             </ul>
+
             <hr className="hr hr-blurry" />
 
             {docs[techniqueSelected]}
