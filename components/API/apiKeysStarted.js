@@ -14,6 +14,14 @@ export default function ApiKeysStarted() {
             </p>
             <GetApiKey />
             <hr className="hr hr-blurry" />
+            <h3 className="display-6">Autenticación</h3>
+            <p>
+            Para acceder al endpoint /api, se requiere una clave de API válida. La clave de API debe ser proporcionada en los encabezados o parámetros de la solicitud como autenticación.
+            </p>
+            <h3 className="display-6">Endpoint</h3>
+            <code>GET /api</code>
+            {/* AQUIII */}
+            <h4></h4>
         </div>
     );
 }
