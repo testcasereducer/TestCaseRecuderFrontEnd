@@ -57,8 +57,7 @@ export default function ApiKeysStarted() {
             </ul>
             <p>En caso de error, la respuesta tendrá la siguiente estructura:</p>
             <code>{'{ "error": true, "error-message": "Mensaje de error", "elapsed-time": "0.12345"}'}</code>
-            {/* AQUIII */}
-            <h4></h4>
+            <hr className="hr hr-blurry" />
         </div>
     );
 }
