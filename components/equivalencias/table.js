@@ -65,7 +65,6 @@ export default function Table() {
 
     function getData() {
         const inputObj = parametersData;
-        console.log(parametersData);
 
         const isEmpty = (obj) => {
             for (let key in obj) {
@@ -96,7 +95,7 @@ export default function Table() {
     }
 
     return (
-        <TableLayout getData={getData} technique={"EP"}>
+        <TableLayout getData={getData} technique={"PE"}>
             {parameters.map((param) => (
                 <Parameter key={param.id} id={param.id} onDataChange={handleDataChange} onDelete={removeParameter} />
             ))}

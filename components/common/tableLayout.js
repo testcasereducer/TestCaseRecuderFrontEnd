@@ -24,14 +24,14 @@ function generateHeaderRow(parameters) {
 function generateSubHeaderRow(parameters) {
     const subHeaderRow = [];
     parameters.forEach(() => {
-        subHeaderRow.push("equiv_class");
-        subHeaderRow.push("value");
+        subHeaderRow.push("clase_equivalencia");
+        subHeaderRow.push("representante");
     });
     return subHeaderRow;
 }
 
 function downloadXLSXFileF1(jsonData, fileName) {
-    const ws_name = ["Valid", "Invalid"];
+    const ws_name = ["validos", "invalidos"];
     const wb = XLSX.utils.book_new();
 
     jsonData.forEach((data, index) => {
@@ -47,8 +47,8 @@ function downloadXLSXFileF1(jsonData, fileName) {
         data.forEach((item) => {
             const row = [];
             parameters.forEach((param) => {
-                row.push(item[param].equiv_class);
-                row.push(item[param].value);
+                row.push(item[param].clase_equivalencia);
+                row.push(item[param].representante);
             });
             ws_data.push(row);
         });
@@ -61,17 +61,16 @@ function downloadXLSXFileF1(jsonData, fileName) {
     XLSX.writeFile(wb, fileName);
 }
 
-
 function downloadXLSXFileF2(jsonData, fileName) {
     const keys = jsonData.keys;
     const array = jsonData.array;
-  
+
     const ws_data = [keys, ...array];
     const ws_name = "Sheet1";
     const ws = XLSX.utils.aoa_to_sheet(ws_data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, ws_name);
-    XLSX.writeFile(wb, fileName)
+    XLSX.writeFile(wb, fileName);
 }
 
 export const downloadJSONFile = (content, fileName) => {
@@ -88,7 +87,6 @@ export const downloadJSONFile = (content, fileName) => {
 };
 
 export default function TableLayout({ children, getData, technique }) {
-
     const [errorMessage, setErrorMessage] = useState("");
     const [loading, setLoading] = useState(false);
 
@@ -98,35 +96,42 @@ export default function TableLayout({ children, getData, technique }) {
 
     const handleGenerateCases = async (typeFile) => {
         try {
-            const data = getData();
+            const parameters = getData();
 
-            if (Object.keys(data).length == 0) {
+            if (Object.keys(parameters).length == 0) {
                 setErrorMessage("No hay parametros que procesar.");
             } else {
 
                 setErrorMessage("");
                 setLoading(true);
-                
-                const parameters = JSON.stringify(data);
-                const url = `${API_URL}?api_key=${API_KEY}&technique=${technique}&parameters=${parameters}`;
-                const response = await fetch(url);
+
+                const data = {
+                    apikey: API_KEY,
+                    tecnica: technique,
+                    parametros: parameters,
+                };
+
+                const response = await fetch(API_URL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data),
+                });
+
                 const content = await response.json();
 
                 setLoading(false);
 
-                if (content["error"]) throw new Error(content["error-message"]);
+                if (content["error"]) throw new Error(content["mensaje"]);
 
                 if (typeFile === "json") {
-                    const fileName = `test_cases_${new Date().toISOString()}.json`;
+                    const fileName = `casos_de_prueba_${new Date().toISOString()}.json`;
                     downloadJSONFile(content, fileName);
                 } else if (typeFile === "xlsx") {
-                    const fileName = `test_cases_${new Date().toISOString()}.xlsx`;
-                    const data = content["test-cases"];
+                    const fileName = `casos_de_prueba_${new Date().toISOString()}.xlsx`;
+                    const data = content["casos-pruebas"];
 
-                    if (technique !== "OA") 
-                       downloadXLSXFileF1([data.valids, data.invalids], fileName, technique);
-                    else 
-                        downloadXLSXFileF2(data, fileName);
+                    if (technique !== "AO") downloadXLSXFileF1([data.casos_validos, data.casos_invalidos], fileName, technique);
+                    else downloadXLSXFileF2(data, fileName);
                 }
             }
         } catch (error) {

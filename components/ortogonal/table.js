@@ -81,7 +81,7 @@ export default function Table() {
         return validateAndCleanData(parametersData);
     }
     return (
-        <TableLayout getData={getData} technique={"OA"}>
+        <TableLayout getData={getData} technique={"AO"}>
             <div className="row">
                 <div className="input-group">
                     {Object.keys(parametersData).length > 0 && (
