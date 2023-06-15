@@ -63,7 +63,7 @@ export default function Table() {
                                     `Clase de equivalencia invalida en el index ${index} para el parámetro ${parameterName}`
                                 );
                             }
-                            equivalenceAcc[name] = { value, valid };
+                            equivalenceAcc[name] = { "representante" : value, "valido" : valid };
                         }
                         return equivalenceAcc;
                     },
@@ -75,7 +75,7 @@ export default function Table() {
         }, {});
     }
 
-    function getData() {
+    function getData() { 
         const inputObj = parametersData;
 
         const isEmpty = (obj) => {
