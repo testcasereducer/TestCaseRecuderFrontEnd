@@ -9,7 +9,7 @@ export const techniques = [
     },
     {
         id: 1,
-        title: "Valores al Limite",
+        title: "Valores al Límite",
         description:
             "Prueba los valores más pequeños y más grandes que una función puede aceptar para detectar errores.",
         link: "/limites",

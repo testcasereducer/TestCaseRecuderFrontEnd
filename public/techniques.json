@@ -9,7 +9,7 @@
     },
     {
         "id"  : 1,
-        "title" : "Valores al Limite",
+        "title" : "Valores al Límite",
         "description" : "Prueba los valores más pequeños y más grandes que una función puede aceptar para detectar errores.",
         "link" : "/limites",
         "iconName" : "bi-body-text",
@@ -18,7 +18,7 @@
     {
         "id" : 2,
         "title" : "Arreglos Ortogonales",
-        "description" : "muestra todas las combinaciones posibles de entrada de una función de manera eficientes.",
+        "description" : "Muestra todas las combinaciones posibles de entrada de una función de manera eficientes.",
         "link" : "/ortogonales",
         "iconName" : "bi-arrows-expand",
         "abbreviation" : "OA"

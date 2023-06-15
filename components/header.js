@@ -17,7 +17,7 @@ export default function Header() {
                 <div className="mt-2 text-secondary">|</div>
                 <li>
                     <Link href="/about" className="nav-link px-2 link-primary text-dark">
-                        About
+                        Acerca de
                     </Link>
                 </li>
             </ul>
