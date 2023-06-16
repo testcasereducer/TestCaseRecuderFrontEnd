@@ -45,7 +45,16 @@
         }
     },
     {
-        "title": "Ejemplo",
+        "title": "Ejemplo 1 (común)",
+        "description": "El ejemplo a continuación presenta un escenario con 3 parámetros: \"salarioo\" con 4 clases de equivalencia (2 válidas y 2 inválidas), \"horas trabajadas\" con 4 clases (2 válidas y 2 inválidas) y \"experiencia (años)\" con 4 clases (2 válidas y 4 inválidas). Si se realizara una prueba exhaustiva sin utilizar la partición de equivalencias, se requerirían 4x4x4 = 64 pruebas. Sin embargo, al aplicar la técnica de partición de equivalencias, se obtienen únicamente 12 casos de prueba, divididos en 6 casos válidos y 6 casos inválidos, lo cual representa una reducción significativa en la cantidad de pruebas necesarias.o",
+        "image": {
+            "url" : "/EP/example_common.png",
+            "width" : 700,
+            "height" : 690         
+        }
+    },
+    {
+        "title": "Ejemplo 2",
         "description": "El ejemplo a continuación presenta un escenario con 3 parámetros: \"estados\" con 4 clases de equivalencia (2 válidas y 2 inválidas), \"tipo de cuenta\" con 4 clases (2 válidas y 2 inválidas) y \"monto\" con 6 clases (2 válidas y 4 inválidas). Si se realizara una prueba exhaustiva sin utilizar la partición de equivalencias, se requerirían 4x4x6 = 96 pruebas. Sin embargo, al aplicar la técnica de partición de equivalencias, se obtienen únicamente 16 casos de prueba, divididos en 8 casos válidos y 8 casos inválidos, lo cual representa una reducción significativa en la cantidad de pruebas necesarias.o",
         "image": {
             "url" : "/EP/example.png",

@@ -54,10 +54,10 @@
         }
     },
     {
-        "title": "Ejemplo",
+        "title": "Ejemplo 1 (común)",
         "description": "En este ejemplo, consideramos tres parámetros de tipo lambda: salario, horas trabajadas y experiencia. Cada parámetro está acotado en un rango específico y con un paso especifico. Cada parámetro genera 2 valores inválidos y 5 valores válidos mediante la función lambda correspondiente, finalemnte se usa la técnica de partición de equivalencias para generar los casos de prueba.",
         "image": {
-            "url": "/LVA/example.png",
+            "url": "/LVA/example_common.png",
             "width": 700,
             "height": 690
         }

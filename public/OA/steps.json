@@ -35,9 +35,17 @@
             "height": 500
         }
     },
-
     {
-        "title": "Ejemplo",
+        "title": "Ejemplo 1 (común)",
+        "description": "En este ejemplo, tenemos 4 parámetros: \"salario\" con 4 opciones, \"horas trabajadas\" con 4 opciones, \"experiencia (años)\" con 4 opciones. Si calculamos el número de combinaciones sin utilizar arreglos ortogonales de Taguchi, obtendríamos un total de 4x4x4 = 64 combinaciones posibles. Sin embargo, al aplicar la técnica de arreglos ortogonales de Taguchi, podemos reducir significativamente el número de casos de prueba necesarios. Usando un arreglo ortogonal adecuado para 3 factores y niveles correspondientes (L16B), obtendremos un total de 16 casos de prueba, que representan de manera efectiva todas las posibles combinaciones.",
+        "image": {
+            "url": "/OA/example_common.png",
+            "width": 700,
+            "height": 690
+        }
+    },
+    {
+        "title": "Ejemplo 2",
         "description": "En este ejemplo, tenemos 4 parámetros: \"tipo de cliente\" con 3 opciones, \"plazo de pago\" con 3 opciones, \"cantidad solicitada\" con 2 opciones y \"envío de pago\" con 3 opciones. Si calculamos el número de combinaciones sin utilizar arreglos ortogonales de Taguchi, obtendríamos un total de 3x3x2x3 = 54 combinaciones posibles. Sin embargo, al aplicar la técnica de arreglos ortogonales de Taguchi, podemos reducir significativamente el número de casos de prueba necesarios. Usando un arreglo ortogonal adecuado para 4 factores y niveles correspondientes, obtendremos un total de 9 casos de prueba, que representan de manera efectiva todas las posibles combinaciones.",
         "image": {
             "url": "/OA/example.png",

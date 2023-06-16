@@ -14,7 +14,7 @@ export default function Footer() {
             }}
           >
             <div className="text-center p-4">
-              © 2023 Test-Case-Reducer
+              © 2023 Test Case Reducer
             </div>
           </footer>
         </div>
