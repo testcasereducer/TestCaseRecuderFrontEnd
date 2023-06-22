@@ -22,7 +22,7 @@ export default function ApiKeysStarted() {
                     className="btn btn-outline-primary btn-sm"
                     onClick={() => window.open("https://testcasereducer.docs.apiary.io/#", "_blank")}
                     taget="_blank">
-                    Ir a la documentación <i class="bi bi-arrow-right"></i>
+                    Ir a la documentación <i className="bi bi-arrow-right"></i>
                 </button>
             </div>
             <p>

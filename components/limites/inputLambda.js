@@ -7,9 +7,17 @@ export default function InputLambda({ id, onDelete, onDataChange }) {
     const [step, setStep] = useState("");
     const [tooltip, setTooltip] = useState(false);
 
-    const toggleTooltip = () => {
-        setTooltip(!tooltip);
+    const [tooltipLambda, setTooltipLambda] = useState(false); 
+    const [tooltipStep, setTooltipStep] = useState(false); 
+
+    const toggleTooltipLambda = () => {
+        setTooltipLambda(!tooltipLambda);
     };
+
+    const toggleTooltipStep = () => {
+        setTooltipStep(!tooltipStep);
+    };
+
 
     const handleLambdaChange = (e) => {
         setLambda(e.target.value);
@@ -25,6 +33,7 @@ export default function InputLambda({ id, onDelete, onDataChange }) {
             <div className="input-group input-group-sm">
                 <div className="input-group-text text-primary">Lambda x :</div>
                 <input
+                    id={`tooltip-lambda-${id}`}
                     className="form-control form-control-sm"
                     placeholder=""
                     style={{ width: "40%" }}
@@ -32,6 +41,14 @@ export default function InputLambda({ id, onDelete, onDataChange }) {
                     onChange={handleLambdaChange}
                 />
 
+                <Tooltip
+                    key={`tooltip-lambda-${id}`}
+                    target={`tooltip-lambda-${id}`}
+                    isOpen={tooltipLambda}
+                    toggle={() => toggleTooltipLambda()}
+                    placement="top">
+                    {"Ej. x>=10 and x<=10^5"}
+                </Tooltip>
                 <input
                     id={`tooltip-lambda-step-${id}`}
                     type="number"
@@ -45,8 +62,8 @@ export default function InputLambda({ id, onDelete, onDataChange }) {
                 <Tooltip
                     key={`tooltip-lambda-step-${id}`}
                     target={`tooltip-lambda-step-${id}`}
-                    isOpen={tooltip}
-                    toggle={() => toggleTooltip()}
+                    isOpen={tooltipStep}
+                    toggle={() => toggleTooltipStep()}
                     placement="top">
                     El paso es el incremento de x
                 </Tooltip>

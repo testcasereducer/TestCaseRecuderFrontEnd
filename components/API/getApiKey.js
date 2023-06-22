@@ -47,7 +47,7 @@ export default function GetApiKey() {
                 });
             } else {
                 setAlert({
-                    message: content.message,
+                    message: "Error generating API key",
                     type: "danger",
                 });
             }
@@ -94,7 +94,7 @@ export default function GetApiKey() {
                         <div className="modal-content">
                             <div className="modal-header">
                                 <h5 className="modal-title">Generar clave API</h5>
-                                <button type="button" className="btn btn-unstyled" onClick={() => handleCloseModal()}>
+                                <button type="button" className="btn btn-unstyled btn-close-dark" onClick={() => handleCloseModal()}>
                                     <i className="bi bi-x-lg" />
                                 </button>
                             </div>
